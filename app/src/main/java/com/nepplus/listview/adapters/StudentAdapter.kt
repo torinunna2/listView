@@ -37,7 +37,7 @@ class StudentAdapter(
         nameTxt.text = data.name
         addressTxt.text = data.address
 
-        ageTxt.text = "(${2021 - data.birthYear + 1} 세)"
+        ageTxt.text = "(${2021 - data.getKoreanAgeByYear(2021)} 세)"
 
 
         return row
